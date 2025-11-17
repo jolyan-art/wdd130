@@ -1,0 +1,328 @@
+/* ==========================================================
+   Rafting Site Stylesheet
+   File: wwr/styles/rafting.css
+   ========================================================== */
+
+/* -----------------------------
+   CSS VARIABLES (defined in :root)
+   Choose colors that work well together and provide contrast
+----------------------------- */
+:root {
+  /* Fonts */
+  --body-font: "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Georgia", "Times New Roman", serif;
+
+  /* Color palette */
+  --primary-color: #0d4f6f;     /* deep teal-blue (headings, accents) */
+  --secondary-color: #107896;   /* teal */
+  --accent1-color: #f6a800;     /* warm orange/yellow (buttons, overlay) */
+  --muted-color: #f2f6f7;       /* very light background */
+  --text-color: #102027;        /* very dark blue-gray for body text */
+  --light-text-color: #ffffff;  /* for text on dark backgrounds */
+
+  /* Layout */
+  --page-width: 840px;
+  --gutter: 16px;
+  --radius: 8px;
+}
+
+/* -----------------------------
+   RESET & BOX-SIZING
+----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  body {
+    font-family: var(--body-font);
+    color: #333;
+    line-height: 1.6;
+    background: #fff;
+  }
+  box-sizing: border-box;
+}
+
+/* -----------------------------
+----------------------------- */
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--muted-color);
+  line-height: 1.5;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  header img {
+    display: block;
+  }
+
+  header nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* -----------------------------
+  .socialmedia a {
+    text-decoration: none;
+    margin-right: 8px;
+  }
+   CONTAINER WIDTH (header, main, footer)
+   Center content horizontally
+----------------------------- */
+main,
+footer {
+  width: var(--page-width);
+  margin: 0 auto;
+}
+
+/* -----------------------------
+   HEADER
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+  }
+----------------------------- */
+header {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  padding: 18px var(--gutter);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+
+header .site-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+  h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+    z-index: 2;
+  }
+header h1.site-title {
+  font-family: var(--heading-font);
+  font-size: 1.4rem;
+  color: var(--light-text-color);
+}
+
+/* NAV */
+nav {
+  margin: 16px;
+  padding: 8px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+  .hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 16px;
+    max-width: 400px;
+    border-radius: 6px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+nav a {
+  color: var(--accent1-color);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav a:focus {
+  background: rgba(255, 255, 255, 0.08);
+  .hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 16px;
+  }
+  outline: none;
+}
+  a:focus, a:active {
+    outline: 3px solid var(--accent2-color);
+    outline-offset: 2px;
+  }
+
+/* -----------------------------
+   BASIC SPACING (nav, p, section, article)
+----------------------------- */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+  .socialmedia img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Headings */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+/* Paragraphs */
+p {
+  color: var(--text-color);
+  margin-bottom: 12px;
+}
+
+/* -----------------------------
+   HERO (image with overlays)
+----------------------------- */
+.hero {
+  position: relative;         /* required so children can be absolute */
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 18px auto;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(16, 32, 39, 0.12);
+  background-color: #000; /* fallback while image loads */
+  height: var(--hero-height);
+}
+
+/* The hero image fills the container */
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* ensure it fills the hero area visually on tall images */
+  min-height: var(--hero-height);
+}
+
+/* Big overlay heading centered across the top of the image */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.9;
+  background-color: var(--accent1-color);
+  color: var(--light-text-color);
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Overlay article positioned near the lower-left of the hero */
+.hero article {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: calc(100% - 40px); /* leave room for padding */
+  max-width: 620px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--text-color);
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(16, 32, 39, 0.12);
+  backdrop-filter: blur(2px);
+}
+
+/* Image inside the overlay article floats to the right */
+.hero article img {
+  float: right;
+  width: 125px;    /* per spec */
+  height: auto;
+  margin-left: 12px;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+}
+
+/* Ensure floated image doesn't break layout on small screens */
+.hero article::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* -----------------------------
+   FOOTER
+----------------------------- */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  padding: 18px var(--gutter);
+  margin-top: 18px;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  text-align: center;
+}
+
+/* Social media area: remove underline from image links */
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Make footer small print and accessible */
+footer p {
+  font-size: 0.95rem;
+}
+
+/* -----------------------------
+   RESPONSIVE ADJUSTMENTS
+----------------------------- */
+@media (max-width: 900px) {
+  :root {
+    --page-width: 92%;
+  }
+  header, main, footer {
+    width: var(--page-width);
+  }
+  .hero {
+    height: 320px;
+  }
+  .hero article {
+    max-width: 88%;
+    left: 6%;
+    bottom: 12px;
+  }
+  .hero article img {
+    width: 110px;
+  }
+}
+
+@media (max-width: 520px) {
+  header h1.site-title {
+    font-size: 1.1rem;
+  }
+  .hero {
+    height: 280px;
+  }
+  .hero h1 {
+    font-size: 1.25rem;
+    padding: 12px;
+  }
+  .hero article img {
+    width: 95px;
+  }
+}
