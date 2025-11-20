@@ -1,0 +1,29 @@
+name: Deploy WWR site to gh-pages
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'week03/wwr/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./week03/wwr
+          commit_message: 'Deploy wwr site to gh-pages (via action)'
