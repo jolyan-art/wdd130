@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stage Lira Highway Bar & Accommodation</title>
+    <meta name="description"
+      content="Stage Lira Highway Bar & Accommodation offers a welcoming bar experience, great meals, and comfortable stays along the highway." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <div class="brand">
+                <span class="brand-mark">S</span>
+                Stage Lira
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#bar">Bar</a>
+                <a href="#accommodation">Stay</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <p class="eyebrow">Highway Stop • Food • Comfort</p>
+                <h1>Relax, Refuel, and Recharge at Stage Lira.</h1>
+                <p>
+                    Welcome to Stage Lira Highway Bar & Accommodation, your perfect stop
+                    for good company, great food, and a restful night away from the road.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#accommodation">Book a Room</a>
+                    <a class="btn btn-secondary" href="#bar">Explore the Bar</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about container">
+            <div class="section-heading">
+                <p class="eyebrow dark">About Us</p>
+                <h2>Your Roadside Haven</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>
+                        Nestled along the highway, Stage Lira blends a lively bar culture
+                        with cozy accommodation tailored for travelers, families, and
+                        friends. Whether you're stopping for a cold drink, a hearty meal, or
+                        a peaceful night’s sleep, we make every visit memorable.
+                    </p>
+                    <p>
+                        From sunset drinks to early morning coffee, we bring a warm welcome
+                        and a refreshing break to every journey.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h3>Why travelers love us</h3>
+                    <ul>
+                        <li>Comfortable rooms and clean facilities</li>
+                        <li>Fresh local meals and signature drinks</li>
+                        <li>Friendly service and warm atmosphere</li>
+                        <li>Perfect stopover for long-distance travel</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="bar" class="bar-section">
+            <div class="container">
+                <div class="section-heading center">
+                    <p class="eyebrow dark">The Bar</p>
+                    <h2>Fresh Drinks. Great Vibes.</h2>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <img
+                          src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80"
+                          alt="Craft cocktails at Stage Lira" />
+                        <div class="card-body">
+                            <h3>Signature Cocktails</h3>
+                            <p>Fresh ingredients, bold flavors, and a welcoming bar atmosphere.</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <img
+                          src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80"
+                          alt="Delicious meals served at the bar" />
+                        <div class="card-body">
+                            <h3>Comfort Food</h3>
+                            <p>Hearty meals and tasty bites made for road-trip travelers.</p>
+                        </div>
+                    </article>
+
+                    <article class="feature-card">
+                        <img
+                          src="https://images.unsplash.com/photo-1528605248634-43f7d85d3287?auto=format&fit=crop&w=900&q=80"
+                          alt="People enjoying drinks together" />
+                        <div class="card-body">
+                            <h3>Live Social Energy</h3>
+                            <p>A relaxed place to meet friends, families, and fellow travelers.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="accommodation" class="rooms container">
+            <div class="section-heading">
+                <p class="eyebrow dark">Accommodation</p>
+                <h2>Rest in Comfort</h2>
+            </div>
+
+            <div class="room-grid">
+                <article class="room-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+                      alt="Cozy standard room" />
+                    <div class="room-info">
+                        <h3>Standard Room</h3>
+                        <p>Clean, cozy, and comfortable for solo travelers or couples.</p>
+                        <span>From $45/night</span>
+                    </div>
+                </article>
+
+                <article class="room-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+                      alt="Comfortable deluxe room" />
+                    <div class="room-info">
+                        <h3>Deluxe Room</h3>
+                        <p>Extra space, soft bedding, and a more relaxed overnight stay.</p>
+                        <span>From $70/night</span>
+                    </div>
+                </article>
+
+                <article class="room-card">
+                    <img
+                      src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
+                      alt="Family suite at the accommodation" />
+                    <div class="room-info">
+                        <h3>Family Suite</h3>
+                        <p>Perfect for families needing room to stretch out and unwind.</p>
+                        <span>From $95/night</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-heading center">
+                    <p class="eyebrow dark">Gallery</p>
+                    <h2>Moments Worth Sharing</h2>
+                </div>
+
+                <div class="gallery-grid">
+                    <img
+                      src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80"
+                      alt="Food and drink served at the highway bar" />
+                    <img
+                      src="https://images.unsplash.com/photo-1528605248634-43f7d85d3287?auto=format&fit=crop&w=700&q=80"
+                      alt="Guests enjoying a warm evening" />
+                    <img
+                      src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=700&q=80"
+                      alt="Comfortable accommodation room" />
+                    <img
+                      src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80"
+                      alt="Restaurant dining atmosphere" />
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <div class="contact-card">
+                <div>
+                    <p class="eyebrow dark">Visit Us</p>
+                    <h2>Plan Your Stop</h2>
+                </div>
+                <div class="contact-details">
+                    <p>123 Highway Route, Lira, Uganda</p>
+                    <p>Phone: +256 700 123 456</p>
+                    <p>Email: hello@stagelira.com</p>
+                </div>
+                <a href="mailto:hello@stagelira.com" class="btn btn-primary">Book Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Stage Lira Highway Bar & Accommodation</p>
+    </footer>
+</body>
+
+</html>
+````
+
+## styles.css
+
+````css
+:root {
+--primary: #7a3b2e;
+--primary-dark: #5d291f;
+--gold: #d7a94f;
+--cream: #f6f0ea;
+--charcoal: #1f1f1f;
+--muted: #5d5d5d;
+--white: #ffffff;
+--shadow: rgba(23, 18, 16, 0.15);
+}
+
+* {
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+font-family: "Inter", sans-serif;
+color: var(--charcoal);
+background: var(--white);
+line-height: 1.6;
+}
+
+img {
+width: 100%;
+display: block;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+.container {
+width: min(1120px, 90%);
+margin: 0 auto;
+}
+
+.site-header {
+position: sticky;
+top: 0;
+z-index: 10;
+background: rgba(26, 22, 19, 0.8);
+backdrop-filter: blur(8px);
+border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav {
+display: flex;
+align-items: center;
+justify-content: space-between;
+min-height: 76px;
+}
+
+.brand {
+color: var(--white);
+font-weight: 700;
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+gap: 0.55rem;
+}
+
+.brand-mark {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 32px;
+height: 32px;
+border-radius: 50%;
+background: var(--gold);
+color: var(--primary-dark);
+font-weight: 800;
+}
+
+.nav-links {
+display: flex;
+gap: 1.4rem;
+color: rgba(255, 255, 255, 0.85);
+font-size: 0.95rem;
+font-weight: 500;
+}
+
+.nav-links a:hover {
+color: var(--gold);
+}
+
+.hero {
+position: relative;
+min-height: 680px;
+display: grid;
+place-items: center;
+background:
+url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80")
+center/cover no-repeat;
+}
+
+.hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(90deg, rgba(17, 14, 12, 0.8), rgba(17, 14, 12, 0.25));
+}
+
+.hero-content {
+position: relative;
+z-index: 1;
+color: var(--white);
+width: min(680px, 90%);
+padding: 3rem 0;
+}
+
+.eyebrow {
+font-size: 0.8rem;
+letter-spacing: 0.14em;
+text-transform: uppercase;
+font-weight: 700;
+color: var(--gold);
+margin-bottom: 1rem;
+}
+
+.eyebrow.dark {
+color: var(--primary);
+}
+
+.hero h1,
+.section-heading h2,
+.contact-card h2 {
+font-family: "Playfair Display", serif;
+margin: 0 0 1rem;
+line-height: 1.2;
+}
+
+.hero h1 {
+font-size: clamp(2.8rem, 5vw, 5rem);
+max-width: 620px;
+}
+
+.hero p {
+font-size: 1.1rem;
+max-width: 600px;
+color: rgba(255, 255, 255, 0.87);
+}
+
+.hero-actions {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+margin-top: 2rem;
+}
+
+.btn {
+display: inline-block;
+border-radius: 999px;
+padding: 0.9rem 1.5rem;
+font-weight: 700;
+transition: 0.25s ease;
+}
+
+.btn-primary {
+background: var(--gold);
+color: var(--primary-dark);
+}
+
+.btn-primary:hover {
+background: #e0b464;
+}
+
+.btn-secondary {
+border: 1px solid rgba(255, 255, 255, 0.4);
+background: rgba(255, 255, 255, 0.08);
+color: var(--white);
+}
+
+.btn-secondary:hover {
+background: rgba(255, 255, 255, 0.18);
+}
+
+section {
+padding: 5rem 0;
+}
+
+.section-heading {
+margin-bottom: 2.5rem;
+}
+
+.section-heading.center {
+text-align: center;
+}
+
+.section-heading h2 {
+font-size: clamp(2.2rem, 4vw, 3.2rem);
+color: var(--charcoal);
+}
+
+.about-grid {
+display: grid;
+grid-template-columns: 1.4fr 1fr;
+gap: 2rem;
+align-items: center;
+}
+
+.about-copy p {
+font-size: 1.05rem;
+color: var(--muted);
+margin-bottom: 1rem;
+}
+
+.about-card {
+background: var(--cream);
+padding: 2rem;
+border-radius: 1.25rem;
+box-shadow: 0 12px 28px var(--shadow);
+}
+
+.about-card h3 {
+margin-top: 0;
+font-size: 1.5rem;
+color: var(--primary-dark);
+}
+
+.about-card ul {
+margin: 0;
+padding-left: 1.25rem;
+color: var(--charcoal);
+}
+
+.bar-section {
+background: linear-gradient(180deg, #fffaf7, #f7efe9);
+}
+
+.feature-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 2rem;
+}
+
+.feature-card {
+background: var(--white);
+overflow: hidden;
+border-radius: 20px;
+box-shadow: 0 14px 32px var(--shadow);
+}
+
+.feature-card img {
+height: 260px;
+object-fit: cover;
+}
+
+.card-body {
+padding: 1.5rem;
+}
+
+.card-body h3 {
+margin: 0 0 0.5rem;
+font-size: 1.4rem;
+color: var(--primary-dark);
+}
+
+.card-body p {
+margin: 0;
+color: var(--muted);
+}
+
+.room-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 2rem;
+}
+
+.room-card {
+background: var(--white);
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 12px 28px rgba(31, 31, 31, 0.08);
+}
+
+.room-card img {
+height: 260px;
+object-fit: cover;
+}
+
+.room-info {
+padding: 1.5rem;
+}
+
+.room-info h3 {
+margin-top: 0;
+margin-bottom: 0.75rem;
+font-size: 1.5rem;
+color: var(--primary-dark);
+}
+
+.room-info p {
+margin: 0 0 1rem;
+color: var(--muted);
+}
+
+.room-info span {
+display: inline-block;
+font-weight: 700;
+color: var(--primary);
+}
+
+.gallery-section {
+background: #fbf4ef;
+}
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(4, minmax(0, 1fr));
+gap: 1rem;
+}
+
+.gallery-grid img {
+height: 250px;
+object-fit: cover;
+border-radius: 18px;
+transition: transform 0.25s ease;
+}
+
+.gallery-grid img:hover {
+transform: scale(1.02);
+}
+
+.contact-card {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 2rem;
+padding: 2rem 2.5rem;
+background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+color: var(--white);
+border-radius: 24px;
+box-shadow: 0 16px 40px rgba(93, 41, 31, 0.22);
+}
+
+.contact-details p {
+margin: 0.35rem 0;
+color: rgba(255, 255, 255, 0.9);
+}
+
+.site-footer {
+padding: 1.25rem 1rem;
+text-align: center;
+background: #1a1412;
+color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 900px) {
+.about-grid,
+.feature-grid,
+.room-grid,
+.gallery-grid,
+.contact-card {
+grid-template-columns: 1fr;
+display: grid;
+}
+
+.contact-card {
+justify-content: flex-start;
+}
+
+.nav {
+flex-direction: column;
+justify-content: center;
+gap: 1rem;
+padding: 1rem 0;
+}
+
+.nav-links {
+flex-wrap: wrap;
+justify-content: center;
+}
+}
+
+@media (max-width: 600px) {
+.hero {
+min-height: 560px;
+}
+
+.hero-content {
+text-align: center;
+}
+
+.hero-actions {
+justify-content: center;
+}
+
+.gallery-grid {
+grid-template-columns: 1fr 1fr;
+}
+}
+````
+
+If you want, I can also turn this into a 3-page version with a separate “menu,” “booking,” and
+“contact” page.

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Rafting Adventures</title>
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #0b3d91;
+        }
+
+        header .logo {
+            max-width: 150px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #0b3d91;
+            border-radius: 5px;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+        }
+
+        #history {
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        #history h2 {
+            margin-bottom: 20px;
+        }
+
+        #history p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #adventures h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .adventure-gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .adventure-gallery figure {
+            flex: 1 1 calc(20% - 10px);
+            text-align: center;
+        }
+
+        .adventure-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .adventure-gallery figcaption {
+            margin-top: 8px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #0b3d91;
+            color: #fff;
+            flex-wrap: wrap;
+        }
+
+        footer .social-icons img {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+
+        @media(max-width: 900px) {
+            .adventure-gallery figure {
+                flex: 1 1 calc(50% - 10px);
+                margin-bottom: 20px;
+            }
+        }
+
+        @media(max-width: 600px) {
+            header {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="images/logo.png" alt="Rafting Adventures Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- History Section -->
+    <section id="history">
+        <h2>Our History</h2>
+        <p>Founded in 1995, our rafting company has led thousands of adventurers through the rivers
+            of the Rockies. Our experienced guides ensure safety and excitement on every trip. Over
+            the years, we have expanded our trips and adventures while keeping safety and fun our
+            top priorities.</p>
+    </section>
+
+    <!-- Adventures Section -->
+    <section id="adventures">
+        <h2>Our Adventures</h2>
+        <div class="adventure-gallery">
+            <figure>
+                <img src="images/los-dientes.jpg" alt="Los Dientes del Diablo">
+                <figcaption>Los Dientes del Diablo</figcaption>
+            </figure>
+            <figure>
+                <img src="images/big-mallard.jpg" alt="Big Mallard">
+                <figcaption>Big Mallard</figcaption>
+            </figure>
+            <figure>
+                <img src="images/half-day.jpg" alt="Half Day Adventure">
+                <figcaption>Half Day Adventure</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rapid-rush.jpg" alt="Rapid Rush">
+                <figcaption>Rapid Rush</figcaption>
+            </figure>
+            <figure>
+                <img src="images/calm-river.jpg" alt="Calm River">
+                <figcaption>Calm River</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-icons">
+            <img src="images/facebook.png" alt="Facebook">
+            <img src="images/twitter.png" alt="Twitter">
+            <img src="images/instagram.png" alt="Instagram">
+        </div>
+        <p>&copy; 2026 Rafting Adventures. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
